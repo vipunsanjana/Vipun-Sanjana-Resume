@@ -53,5 +53,3 @@ This resume is released under the [MIT License](https://opensource.org/licenses/
 * **🔗 LinkedIn:** [linkedin.com/in/vipunsanjana](https://linkedin.com/in/vipunsanjana)
 * **🐙 GitHub:** [github.com/vipunsanjana](https://github.com/vipunsanjana)
 * **🌐 Portfolio:** [www.vipunsanjana.dev](https://www.vipunsanjana.dev)
-
-```
