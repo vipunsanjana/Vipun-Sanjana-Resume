@@ -1,0 +1,197 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Vipun Sanjana Jayathunga
+% Purpose: Final resume for GitHub with detailed comments for clarity
+%------------------------
+
+\documentclass[letterpaper,11pt]{article} % Standard letterpaper and font size
+
+%-------------------------
+% Package imports
+%-------------------------
+\usepackage{latexsym} % For additional symbols
+\usepackage[empty]{fullpage} % Minimal margins
+\usepackage{titlesec} % For custom section formatting
+\usepackage{marvosym} % For symbols like email/phone icons
+\usepackage[usenames,dvipsnames]{color} % Named colors for text
+\usepackage{verbatim} % For multi-line comments
+\usepackage{enumitem} % Custom lists
+\usepackage[hidelinks]{hyperref} % Clickable links without colored boxes
+\usepackage{fancyhdr} % For header/footer customization
+\usepackage[english]{babel} % English language support
+\usepackage{tabularx} % Flexible-width tables
+\usepackage{graphicx} % For including images
+\usepackage{tikz} % Vector graphics if needed
+\input{glyphtounicode} % Ensure correct PDF text encoding for ATS
+
+%-------------------------
+% Font settings
+%-------------------------
+\usepackage{helvet} % Set font to Arial/Helvetica
+\renewcommand{\familydefault}{\sfdefault} % Apply sans-serif globally
+
+%-------------------------
+% Page layout and margins
+%-------------------------
+\pagestyle{fancy} 
+\fancyhf{} % Clear header/footer
+\fancyfoot{} 
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt} 
+\addtolength{\oddsidemargin}{-0.5in} 
+\addtolength{\evensidemargin}{-0.5in} 
+\addtolength{\textwidth}{1in} 
+\addtolength{\topmargin}{-.5in} 
+\addtolength{\textheight}{1.0in} 
+
+\urlstyle{same} % Keep URL font consistent
+\raggedbottom % Avoid vertical stretching
+\raggedright % Left-align text
+\setlength{\tabcolsep}{0in} % Table column padding
+
+%-------------------------
+% Section formatting
+%-------------------------
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure PDF is ATS-friendly
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands for resume formatting
+%-------------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{ % Standard experience/education heading
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\ % Name/Organization and date
+    \textit{\small#3} & \textit{\small #4} \\ % Position and optional info
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeCustomSubheading}[2]{ % For simpler headings without dates
+  \vspace{2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+  \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{ % For sub-sub entries
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small#2} \\
+  \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{ % For projects section
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$} % Sub-item bullet style
+
+% List start/end commands for better formatting control
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------
+% DOCUMENT START
+%-------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Vipun Sanjana Jayathunga} \\ \vspace{2pt}
+    % Contact info with clickable links
+    \small \href{tel:+94778780559}{+94 77 878 0559} $|$ 
+    \href{mailto:vipunsanjana34@gmail.com}{vipunsanjana34@gmail.com} $|$ 
+    \href{https://linkedin.com/in/vipunsanjana}{LinkedIn} $|$ 
+    \href{https://github.com/vipunsanjana}{GitHub} \\ \vspace{2pt}
+    \href{https://www.vipunsanjana.dev}{www.vipunsanjana.dev}
+\end{center}
+
+%-----------ABOUT-----------
+\section{Personal Profile}
+\resumeSubHeadingListStart
+    \resumeItem{
+    Final-year Software Engineering student at the University of Kelaniya with hands-on experience in backend, frontend, and IoT development. Contributed to AutoSecOps research on AI-driven DevSecOps and interned at WSO2’s Cloud Security Operations Center. Skilled in DevOps, cybersecurity, and Generative AI.}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+    % WSO2 Intern experience
+    \resumeSubheading
+      {WSO2 - Cloud Security Operations Center (R\&D Software Engineer Intern)}{Oct 2024 -- Apr 2025}{}{}
+      \resumeItemListStart
+        \resumeItem{R\&D on phishing detection and automation using Python, Ballerina, MongoDB, Docker, Firebase, MySQL, React TypeScript, and Cloud-native services.}
+        \resumeItem{Designed automation workflows with Azure Log Analytics, RSA/symmetric encryption, Azure Logic Apps, ServiceNow integrations, and Google Sheets automation.}
+        \resumeItem{Deployed microservices on Choreo with scheduled tasks and event-driven triggers, ensuring tested applications and documentation.}
+        \resumeItem{Collaborated on internal R\&D initiatives, gaining enterprise security and backend orchestration experience.}
+      \resumeItemListEnd
+
+    % Crytec Labs experience
+    \resumeSubheading
+      {Crytec Labs – Software Developer (Backend \& Mobile)}{Apr 2024 -- Aug 2024}{}{}
+      \resumeItemListStart
+        \resumeItem{Developed backend modules and APIs using NestJS and supported mobile app development with Flutter.}
+        \resumeItem{Contributed to system architecture design, deployment pipelines, and client-facing solutions.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeCustomSubheading
+      {University of Kelaniya, Sri Lanka}{July 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{B.Sc. (Hons) in Software Engineering, Final Year Undergraduate (GPA: 3.31)}
+        \resumeItem{Key Coursework: Problem Solving, Databases, OOP, Data Structures and Algorithms, Full-Stack Web Development, Mobile App Development, Data Science, DevOps, IoT}
+      \resumeItemListEnd
+
+    \resumeCustomSubheading
+      {Sri Palee College, Horana}{2017 -- 2020}
+      \resumeItemListStart
+        \resumeItem{G.C.E. Advanced Level – Physical Science (Combined Math – A, Physics – B, Chemistry – B, Z-score: 1.6)}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+    % Example project entry
+    \resumeProjectHeading
+      {\textbf{\underline{\href{https://github.com/vipunsanjana/Spring-Microservices-Complete-Blueprint}{Spring Microservices Blueprint}}}}{2024}
+      \resumeItemListStart
+        \resumeItem{Enterprise-grade microservices with service discovery, API Gateway, secure inter-service communication, modular backend. Tech: Spring Boot, Spring Cloud, Eureka, Kafka, Keycloak, Docker, Grafana, Prometheus.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+\resumeItemListStart
+  \resumeItem{Languages: Python, JavaScript/TypeScript, Java, SQL, Go, Ballerina, KQL, Dart, C, C++, PHP}
+  \resumeItem{Frameworks: NestJS, FastAPI, Flask, Flutter, Node.js, Angular, Spring Boot, React, React Native, Express, Next.js, Nuxt.js}
+  \resumeItem{Databases: MySQL, MongoDB, Firebase Firestore, MariaDB, Pinecone}
+  \resumeItem{Cloud & Infrastructure: AWS, Azure, GCP, Kubernetes, Docker, Terraform, Ansible, Choreo, Nginx}
+  \resumeItem{DevOps & Monitoring: Git, GitHub Actions, Argo CD, Jenkins, Grafana, Prometheus}
+  \resumeItem{AI/ML: Generative AI, LLMs, RAG, MLOps, scikit-learn, PyTorch, TensorFlow}
+  \resumeItem{Tools: Postman, Jira, LaTeX, VS Code, IntelliJ IDEA, Android Studio, Arduino IDE}
+  \resumeItem{Platforms: Windows, Linux, Arduino, ESP8266, Raspberry Pi}
+  \resumeItem{Soft Skills: Problem Solving, Critical Thinking, Teamwork, Communication, Continuous Learning}
+\resumeItemListEnd
+
+%-------------------------
+% END OF DOCUMENT
+%-------------------------
+\end{document}
